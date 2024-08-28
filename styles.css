@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */ /* we can aslo include this property here, because we don't need to calculate height and with of the box
+        and it also gives you conststent behaviour and it is good practice
+    */
+}
+
+body{
+ height: 100vh;
+ overflow: hidden;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.box {
+    font-size: 1rem;
+    background-color: pink;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 5px solid seagreen ;
+    margin: 10px;
+    box-sizing: border-box; /* if we apply box-sizing: border-box property to our box the [width * height] includes content + border + padding .
+                    if we apply box-sizing: content-box; (which is default value) property [width * height] only includes content.
+     */
+}
+
+.calc{
+    display: none;
+}
